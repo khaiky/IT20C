@@ -28,7 +28,13 @@ private void addListeners() {
         jButton7.addActionListener(numberListener);
         jButton8.addActionListener(numberListener);
         jButton9.addActionListener(numberListener);
-        jButtonDOT.addActionListener(e -> jTextField1.setText(jTextField1.getText() + "."));
+        jButton16.addActionListener(numberListener);
+        
+     jButton4.addActionListener(numberListener);
+     jButton13.addActionListener(numberListener);
+     jButton15.addActionListener(numberListener);
+     jButton8.addActionListener(numberListener);
+     jButton14.addActionListener(numberListener);
         
 }
         private void setOperator(String op) {
@@ -36,6 +42,7 @@ private void addListeners() {
             stack.push(Double.parseDouble(jTextField1.getText()));
             operator = op;
             jTextField1.setText("");
+            
         }
         
 }
