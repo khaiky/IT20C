@@ -37,5 +37,22 @@ public class LinkedList {
             head = head.next;
             return;
         }
+         Node current = head;
+        while (current.next != null) {
+            if (current.next.data.equals(value)) {
+                current.next = current.next.next;
+                return;
+            }
+            current = current.next;
+        }
+    }
+      // Method to move a node to a new position /swap nodes
+    public void moveNodePointer(int currentIndex, int newIndex) {
+        if (head == null || currentIndex == newIndex) return;
+
+        Node current = head;
+        Node prev = null;
+        Node movingNode = null;
+        Node movingPrev = null;
 }
 }
