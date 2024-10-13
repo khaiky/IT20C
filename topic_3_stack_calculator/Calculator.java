@@ -17,6 +17,12 @@ public class Calculator extends javax.swing.JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout(10, 10));
         setResizable(false);
+        
+         // Create a header label
+        JLabel headerLabel = new JLabel("Stack Calculator", SwingConstants.CENTER);
+        headerLabel.setFont(new Font("Arial", Font.BOLD, 24));
+        headerLabel.setForeground(new Color(70, 130, 180)); // Steel blue color
+        add(headerLabel, BorderLayout.NORTH);
     }
 
    
