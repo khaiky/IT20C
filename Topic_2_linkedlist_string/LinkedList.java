@@ -61,5 +61,9 @@ public class LinkedList {
             prev = current;
             current = current.next;
         }
+         movingNode = current;
+
+        // If the node to move was not found
+        if (movingNode == null) return;
 }
 }
