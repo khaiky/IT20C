@@ -10,5 +10,8 @@ public class Main {
          //add a default list
         ItemManager list = new ItemManager();
         list.addName("Zion");
+        
+         //displaying the updated items
+        list.displayItems();
 }
 }
