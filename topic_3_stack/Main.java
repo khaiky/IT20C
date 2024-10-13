@@ -24,6 +24,11 @@ public class Main {
 			System.out.println("Stack size is: " + stack.size());
 			System.out.println("-------------------");
 			break;
+                        
+                case 2:
+                    System.out.println("Add number: ");
+		    int num = sc.nextInt();
+		    System.out.println("Pushed value: " + stack.size());
                  }
         }
 }
