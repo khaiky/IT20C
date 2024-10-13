@@ -12,11 +12,7 @@ public class Calculator extends javax.swing.JFrame {
     private JTextArea displayArea; // Area to display stack and results
 
     public Calculator() {
-         setTitle("Stack Calculator");
-        setSize(400, 500);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new BorderLayout(10, 10));
-        setResizable(false);
+        addListeners();
         
          // Create a header label
         JLabel headerLabel = new JLabel("Stack Calculator", SwingConstants.CENTER);
@@ -24,9 +20,16 @@ public class Calculator extends javax.swing.JFrame {
         headerLabel.setForeground(new Color(70, 130, 180)); // Steel blue color
         add(headerLabel, BorderLayout.NORTH);
     }
+        private void addListeners(){
+        ActionListener numberListener = e -> {
+        JButton button = (JButton) e.getSource();
+        jTextField1.setText(jTextField1.getText() + button.getText());
+    };
+}
 
+        
    
-    @SuppressWarnings("unchecked")
+    
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -171,11 +174,33 @@ public class Calculator extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton17)
                     .addComponent(jButton16))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    public Calculator(JTextArea displayArea, JButton jButton1, JButton jButton10, JButton jButton11, JButton jButton12, JButton jButton13, JButton jButton14, JButton jButton15, JButton jButton16, JButton jButton17, JButton jButton2, JButton jButton3, JButton jButton4, JButton jButton5, JButton jButton6, JButton jButton7, JButton jButton8, JButton jButton9, JTextField jTextField1) {
+        this.displayArea = displayArea;
+        this.jButton1 = jButton1;
+        this.jButton10 = jButton10;
+        this.jButton11 = jButton11;
+        this.jButton12 = jButton12;
+        this.jButton13 = jButton13;
+        this.jButton14 = jButton14;
+        this.jButton15 = jButton15;
+        this.jButton16 = jButton16;
+        this.jButton17 = jButton17;
+        this.jButton2 = jButton2;
+        this.jButton3 = jButton3;
+        this.jButton4 = jButton4;
+        this.jButton5 = jButton5;
+        this.jButton6 = jButton6;
+        this.jButton7 = jButton7;
+        this.jButton8 = jButton8;
+        this.jButton9 = jButton9;
+        this.jTextField1 = jTextField1;
+    }
 
    
     public static void main(String args[]) {
@@ -226,4 +251,6 @@ public class Calculator extends javax.swing.JFrame {
     private javax.swing.JButton jButton9;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
-}
+
+  
+    }
