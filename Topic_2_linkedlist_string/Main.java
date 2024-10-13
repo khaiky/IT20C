@@ -73,6 +73,11 @@ public class Main {
                         list.printList();
                         System.out.println("------------------------------");
                         break;
+                        
+                  case 4:
+                       System.out.println("Thank you! Comeback and run it again.");
+                        System.exit(0);
+                        break;   
 }
 }
 }
