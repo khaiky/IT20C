@@ -57,6 +57,19 @@ public class Linkedlist {
             Node prev1 = null;
             Node current2 = head;
             Node prev2 = null;
+            
+            // Find the first node and its previous node
+            for (int i = 0; current1 != null && i < index1; i++) {
+                prev1 = current1;
+                current1 = current1.next;
+            }
+
+            // Find the second node and its previous node
+            for (int i = 0; current2 != null && i < index2; i++) {
+                prev2 = current2;
+                current2 = current2.next;
+            }
+
             }
 }
 
