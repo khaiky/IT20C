@@ -12,5 +12,19 @@ public class LinkedList {
             head = newNode;
             return;
         }
+         Node current = head;
+        while (current.next != null) {
+            current = current.next;
+        }
+        current.next = newNode;
+    }
+    
+    // Method to print the linked list
+    public void printList() {
+        Node current = head;
+        while (current != null) {
+            System.out.println(current.data + " -> ");
+            current = current.next;
+        }
 }
 }
