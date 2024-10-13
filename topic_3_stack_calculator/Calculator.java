@@ -1,28 +1,44 @@
 
 package topic_3_stack_calculator;
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Calculator extends javax.swing.JFrame {
- private JTextField jTextField1;
+    private Stack<Double> stack = new Stack<>(10);
     private String operator = "";
-    private double operand1 = 0;
+    private Object jButtonDOT;
     
     public Calculator() {
-         JPanel panel = new JPanel();
-        panel.setLayout(new BorderLayout());
-         jTextField1 = new JTextField();
-        panel.add(jTextField1, BorderLayout.NORTH);
+        initComponents();
+        addListeners();
     }
 private void addListeners() {
         ActionListener numberListener = e -> {
             JButton button = (JButton) e.getSource();
             jTextField1.setText(jTextField1.getText() + button.getText());
                 };
+        jButton10.addActionListener(numberListener);
+        jButton1.addActionListener(numberListener);
+        jButton2.addActionListener(numberListener);
+        jButton3.addActionListener(numberListener);
+        jButton4.addActionListener(numberListener);
+        jButton5.addActionListener(numberListener);
+        jButton6.addActionListener(numberListener);
+        jButton7.addActionListener(numberListener);
+        jButton8.addActionListener(numberListener);
+        jButton9.addActionListener(numberListener);
+        jButtonDOT.addActionListener(e -> jTextField1.setText(jTextField1.getText() + "."));
         
-      }
+}
+        private void setOperator(String op) {
+        if (!jTextField1.getText().isEmpty()) {
+            stack.push(Double.parseDouble(jTextField1.getText()));
+            operator = op;
+            jTextField1.setText("");
+        }
+        
+}
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
