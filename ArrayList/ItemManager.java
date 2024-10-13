@@ -12,10 +12,7 @@ public class ItemManager {
         public void displayItems(){
             System.out.println("Names on our list: " +items);
         }
-        //Added a function to add items into the arraylist
-        public void addName(String item){
-            items.add(item);
-            System.out.println("Names: " + items);
+        
         }
-}
+
 
