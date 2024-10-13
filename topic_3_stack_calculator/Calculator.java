@@ -8,7 +8,8 @@ import java.awt.event.ActionListener;
 import java.util.Stack;
 
 public class Calculator extends javax.swing.JFrame {
-    
+     private Stack<Integer> numberStack = new Stack<>(); // Stack to hold numbers
+    private JTextArea displayArea; // Area to display stack and results
 
     public Calculator() {
         initComponents();
