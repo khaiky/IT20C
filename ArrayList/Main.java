@@ -27,5 +27,11 @@ public class Main {
         //To specify what index the user wants to be change
         System.out.println("Enter Index Number: ");
         int index = sc.nextInt();
+        
+         //Show the updated list of names
+        list.updateItem(index, newItem);
+        list.displayItems();
+        //To revert the code back to String for the next user input
+        sc.nextLine();
 }
 }
