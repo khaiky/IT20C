@@ -69,7 +69,9 @@ public class Main {
                 case 4:
                        System.out.println("Thank you! Comeback and run it again.");
                         System.exit(0);
-                        break;  
+                        break; 
+                default:
+                     System.out.println("Error, Wala sa choices."); 
 }
 }
 }
