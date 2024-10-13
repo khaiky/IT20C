@@ -28,7 +28,7 @@ public class Calculator extends javax.swing.JFrame {
         JButton button = (JButton) e.getSource();
         jTextField1.setText(jTextField1.getText() + button.getText());
     };
-       
+        jButton0.addActionListener(numberListener);
         jButton1.addActionListener(numberListener);
         jButton2.addActionListener(numberListener);
         jButton3.addActionListener(numberListener);
@@ -38,7 +38,9 @@ public class Calculator extends javax.swing.JFrame {
         jButton7.addActionListener(numberListener);
         jButton8.addActionListener(numberListener);
         jButton9.addActionListener(numberListener);
-       
+        jButtonDOT.addActionListener(e -> jTextField1.setText(jTextField1.getText() + "."));
+        
+        
 }
 
 
