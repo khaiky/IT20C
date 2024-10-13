@@ -66,6 +66,10 @@ public class Main {
                         list.swapNodes(item7, item8);
                         list.printList();
                         break;
+                case 4:
+                       System.out.println("Thank you! Comeback and run it again.");
+                        System.exit(0);
+                        break;  
 }
 }
 }
