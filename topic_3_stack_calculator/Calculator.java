@@ -44,9 +44,15 @@ private void addListeners() {
             jTextField1.setText("");
             
         }
-        
-}
-
+      }
+         private void calculateResult() {
+        if (!jTextField1.getText().isEmpty() && !stack.isEmpty()) {
+            double secondOperand = Double.parseDouble(jTextField1.getText());
+            double firstOperand = stack.pop();
+            double result = 0;
+            
+};
+         }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
