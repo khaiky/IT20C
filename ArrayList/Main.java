@@ -13,5 +13,9 @@ public class Main {
         
          //displaying the updated items
         list.displayItems();
+        
+        //Added a println that corresponds with the codes on ItemManager.java
+        System.out.println("Enter the Name You Want to Add: ");
+        String item = sc.nextLine();
 }
 }
