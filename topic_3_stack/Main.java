@@ -32,7 +32,12 @@ public class Main {
                     stack.push(num);
 		    System.out.println("Stack size is: " + stack.size()); 
 		    System.out.println("-------------------------");
+                    
+                case 3:
+                    if(!stack.isEmpty()) {
+		    System.out.println("Top element: " + stack.peek());
                  }
         }
+}
 }
 }
