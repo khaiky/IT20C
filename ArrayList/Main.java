@@ -17,5 +17,15 @@ public class Main {
         //Added a println that corresponds with the codes on ItemManager.java
         System.out.println("Enter the Name You Want to Add: ");
         String item = sc.nextLine();
+        
+         //adding item
+        list.addName(item);
+        
+        //To have the user change names
+        System.out.println("Enter the Name You Want to Change: " );
+        String newItem = sc.nextLine();
+        //To specify what index the user wants to be change
+        System.out.println("Enter Index Number: ");
+        int index = sc.nextInt();
 }
 }
