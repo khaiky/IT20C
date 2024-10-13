@@ -22,27 +22,16 @@ public class Calculator extends javax.swing.JFrame {
         headerLabel.setFont(new Font("Arial", Font.BOLD, 24));
         headerLabel.setForeground(new Color(70, 130, 180)); // Steel blue color
         add(headerLabel, BorderLayout.NORTH);
-    }
-        private void addListeners(){
-        ActionListener numberListener = e -> {
-        JButton button = (JButton) e.getSource();
-        jTextField1.setText(jTextField1.getText() + button.getText());
-    };
-        jButton0.addActionListener(numberListener);
-        jButton1.addActionListener(numberListener);
-        jButton2.addActionListener(numberListener);
-        jButton3.addActionListener(numberListener);
-        jButton4.addActionListener(numberListener);
-        jButton5.addActionListener(numberListener);
-        jButton6.addActionListener(numberListener);
-        jButton7.addActionListener(numberListener);
-        jButton8.addActionListener(numberListener);
-        jButton9.addActionListener(numberListener);
-        jButtonDOT.addActionListener(e -> jTextField1.setText(jTextField1.getText() + "."));
-        
-        
-}
-
+    
+        // Display area for the stack
+        displayArea = new JTextArea(5, 20);
+        displayArea.setEditable(false);
+        displayArea.setFont(new Font("Courier New", Font.PLAIN, 16));
+        displayArea.setMargin(new Insets(10, 10, 10, 10)); 
+        displayArea.setBackground(new Color(240, 248, 255)); 
+        displayArea.setForeground(Color.BLACK); 
+        JScrollPane scrollPane = new JScrollPane(displayArea);
+        add(scrollPane, BorderLayout.CENTER);
 
         
    
@@ -270,6 +259,10 @@ public class Calculator extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void initComponent() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void addListeners() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
