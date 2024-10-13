@@ -13,6 +13,8 @@ public class Calculator extends javax.swing.JFrame {
     public Calculator() {
          JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
+         jTextField1 = new JTextField();
+        panel.add(jTextField1, BorderLayout.NORTH);
     }
 private void addListeners() {
         ActionListener numberListener = e -> {
