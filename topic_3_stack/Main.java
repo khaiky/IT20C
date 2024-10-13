@@ -47,6 +47,9 @@ public class Main {
                     System.out.println("Thank you!");
 		    System.exit(0);
 		    break;
+                    
+                default:
+                    System.out.println("Error");
                  }
         }
 }
