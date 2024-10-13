@@ -39,8 +39,26 @@ public class Linkedlist {
             } else if(head.data != value) {      
                 
             }
+           Node current = head;
+            while (current.next != null) {
+                if (current.next.data == value) {
+                    current.next = current.next.next; 
+                    return;
+                }
+                current = current.next;
+            }
+        }
+        //Method to swap items in the list
+        public void swapNodes(int index1, int index2) {
+            
+            if (head == null || index1 == index2) return;
 
+            Node current1 = head;
+            Node prev1 = null;
+            Node current2 = head;
+            Node prev2 = null;
             }
 }
+
 
 
