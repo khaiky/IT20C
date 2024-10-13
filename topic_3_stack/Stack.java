@@ -18,6 +18,16 @@ public class Stack {
 
     public boolean isFull() {
         return (top == maxSize - 1);
+    }  
+    public int size() {
+        return top + 1;
+    }
+
+    public void push(int value) {
+        if (isFull()) {
+            System.out.println("Stack is full. Cannot push " + value);
+            return;
+        }
     }
 }
 
