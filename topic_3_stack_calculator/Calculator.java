@@ -55,6 +55,20 @@ private void addListeners() {
                 case "+":
                     result = firstOperand + secondOperand;
                     break;
+                 case "-":
+                    result = firstOperand - secondOperand;
+                    break;
+                case "*":
+                    result = firstOperand * secondOperand;
+                    break;
+                case "/":
+                    if (secondOperand != 0) {
+                        result = firstOperand / secondOperand;
+                    } else {
+                        JOptionPane.showMessageDialog(this, "Cannot divide by zero", "Error", JOptionPane.ERROR_MESSAGE);
+                        return;
+                    }
+                    break;    
               }
 };
          }
