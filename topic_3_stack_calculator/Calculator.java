@@ -51,6 +51,11 @@ private void addListeners() {
             double firstOperand = stack.pop();
             double result = 0;
             
+              switch (operator) {
+                case "+":
+                    result = firstOperand + secondOperand;
+                    break;
+              }
 };
          }
     @SuppressWarnings("unchecked")
