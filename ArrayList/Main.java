@@ -6,5 +6,9 @@ public class Main {
         
         //Added a scanner to have user inputs
         Scanner sc = new Scanner(System.in);
+        
+         //add a default list
+        ItemManager list = new ItemManager();
+        list.addName("Zion");
 }
 }
