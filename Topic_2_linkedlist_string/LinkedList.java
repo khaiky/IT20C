@@ -78,5 +78,17 @@ public class LinkedList {
             prev = current;
             current = current.next;
 }
+          
+
+        if (prev != null) {
+            movingNode.next = current;
+            prev.next = movingNode;
+        } else {
+            movingNode.next = head;
+            head = movingNode;
+        }
     }
 }
+    
+    
+
