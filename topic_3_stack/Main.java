@@ -42,6 +42,11 @@ public class Main {
 		    }
 		    System.out.println("---------------------------");
 		    break;
+                    
+                case 4:
+                    System.out.println("Thank you!");
+		    System.exit(0);
+		    break;
                  }
         }
 }
