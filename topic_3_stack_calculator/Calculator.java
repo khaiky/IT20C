@@ -12,7 +12,11 @@ public class Calculator extends javax.swing.JFrame {
     private JTextArea displayArea; // Area to display stack and results
 
     public Calculator() {
-        initComponents();
+         setTitle("Stack Calculator");
+        setSize(400, 500);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new BorderLayout(10, 10));
+        setResizable(false);
     }
 
    
