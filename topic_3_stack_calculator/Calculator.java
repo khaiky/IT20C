@@ -32,6 +32,12 @@ public class Calculator extends javax.swing.JFrame {
         displayArea.setForeground(Color.BLACK); 
         JScrollPane scrollPane = new JScrollPane(displayArea);
         add(scrollPane, BorderLayout.CENTER);
+        
+         // Panel for buttons
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new GridLayout(5, 4, 10, 10)); // Adjusted layout to fit more buttons
+        buttonPanel.setBackground(new Color(255, 255, 255)); 
+    }
 
         
    
@@ -264,6 +270,12 @@ public class Calculator extends javax.swing.JFrame {
 
     private void addListeners() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private static class buttons {
+
+        public buttons() {
+        }
     }
 
   
