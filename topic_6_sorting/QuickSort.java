@@ -1,7 +1,7 @@
 
 package topic_6_sorting;
 
-
+import java.util.Scanner;
 public class QuickSort {
      public static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
@@ -38,4 +38,21 @@ public class QuickSort {
         }
         System.out.println();
     }
+      public static void main(String[] args) {
+            
+            Scanner sc = new Scanner(System.in);
+            
+             int[] arr = null;
+             long timeTaken = 0;
+             
+             while(true) {
+                
+                 System.out.println("Kindly choose a number: "
+                        + " 1. Add array Elements"
+                        + " 2. View sorted array and time taken."
+                        + " 3. Exit");
+                int choice = sc.nextInt();
 }
+      }
+}
+
