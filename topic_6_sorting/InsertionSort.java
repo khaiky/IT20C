@@ -18,4 +18,19 @@ public class InsertionSort {
             arr[j + 1] = key;
         }
     }
+     public static void printArray(int[] arr) {
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+  
+     public static void main(String[] args) {
+            
+            Scanner sc = new Scanner(System.in);
+            
+             int[] arr = null;
+             long timeTaken = 0;
+     
+     }
 }
