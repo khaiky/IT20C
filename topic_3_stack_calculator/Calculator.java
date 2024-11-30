@@ -68,8 +68,8 @@ private void addListeners() {
                         JOptionPane.showMessageDialog(this, "Cannot divide by zero", "Error", JOptionPane.ERROR_MESSAGE);
                         return;
                     }
-                    break;    
-              }
+                    break;                 
+                      }
 };
          }
     @SuppressWarnings("unchecked")
@@ -234,10 +234,7 @@ private void addListeners() {
         });
     }
 
-    private void addListeners() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+   
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
