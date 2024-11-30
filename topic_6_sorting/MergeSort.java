@@ -39,5 +39,41 @@ public class MergeSort {
             arr[k++] = right[j++];
         }
     }
-
+  public static void printArray(int[] arr) {
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+    
+    public static void main(String[] args) {
+            
+            Scanner sc = new Scanner(System.in);
+            
+             int[] arr = null;
+             long timeTaken = 0;
+             
+              while(true) {
+                
+                 System.out.println("Kindly choose a number: "
+                        + " 1. Add array Elements"
+                        + " 2. View sorted array and time taken."
+                        + " 3. Exit");
+                int choice = sc.nextInt();
+                
+                 switch(choice) {
+                    case 1:
+                            System.out.println();
+                            System.out.println("Enter the number of elements you want to store in the array:");
+                            int num = sc.nextInt();
+                            arr = new int[num];
+                        
+                            System.out.println("Enter " + num + " elements.");
+                            for(int i = 0; i < num; i++) {
+                              arr[i] = sc.nextInt();
+                            }
+                            break;
+}
+    }
+}
 }
