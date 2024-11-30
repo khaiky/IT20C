@@ -78,9 +78,16 @@ public class BubbleSort {
                             System.out.println("Thank you! Comeback and run it again.");
                             System.exit(0);
                             break;
-  }
+                            
+                             default:
+                            System.out.println("Invalid choice. Please select a valid option.");    
+                        
+                }
+            }
+        }
 }
-}
-}
+  
+
+
 
 
